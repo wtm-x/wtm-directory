@@ -1,0 +1,29 @@
+<template name="appLayout">
+
+	<div class="layout-transparent mdl-layout mdl-js-layout">
+
+		<!-- Fixed App Header -->
+		{{>appHeader}}
+
+		<!-- Fixed Sidebar Menu -->
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title"> Menu </span>
+			<nav class="mdl-navigation">
+			  <a class="mdl-navigation__link" href="">About: GDG</a>
+			  <a class="mdl-navigation__link" href="">About: WTM</a>
+			  <a class="mdl-navigation__link" href="">About: WTM[X]</a>
+			  <a class="mdl-navigation__link" href="">Contact Us</a>
+			</nav>
+		</div>
+
+		<!-- Route template -->
+		<main class="mdl-layout__content">
+			{{>Template.dynamic template=content}}
+		</main>
+
+		<!-- Fixed App Footer -->
+	  	{{>appFooter }}
+
+	</div>
+
+</template>
