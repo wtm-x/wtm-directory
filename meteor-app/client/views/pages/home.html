@@ -1,3 +1,11 @@
 <template name="home">
-This is a placeholder for the Home template
+
+	<div class="demo-grid-1 mdl-grid">
+		{{#each cards}}
+		  <div class="mdl-cell mdl-cell--4-col">
+		  	{{>cardSquare }}
+		  </div>
+		 {{/each}}
+	</div>
+
 </template>

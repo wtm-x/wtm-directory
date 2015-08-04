@@ -9,3 +9,14 @@
      your background is light. */
   color: white;
 }
+
+/* Floating call-to-action */
+#view-cta {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 150px;
+  z-index: 900;
+}
